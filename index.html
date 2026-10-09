@@ -24,6 +24,25 @@ body{background:#0a0a0a;color:#f5f0e8;font-family:serif}
 .btn{border:1px solid #f5f0e8;padding:15px 30px;text-decoration:none;color:#f5f0e8;letter-spacing:2px}
 @media(max-width:768px){.procesos{grid-template-columns:1fr}}
 .wa-float{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:flex-start;justify-content:center;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,.3)}.wa-float svg{width:32px;height:32px}</style>
+
+<style>
+/* FIX PRO Z - subir FEANE arriba */
+.hero, #hero, .slider, .slider_section, .bg-box, .hero_area {
+  display:flex !important;
+  align-items:flex-start !important;
+  justify-content:flex-start !important;
+  padding-top:14vh !important;
+  padding-bottom:0 !important;
+}
+.hero .detail-box, .hero .detail_box, .hero .content, .hero .hero-content, .hero .container,
+.slider .detail-box, .bg-box + div {
+  margin-top:0 !important;
+  top:5% !important;
+  bottom:auto !important;
+  transform:translateY(0) !important;
+  position:relative !important;
+}
+</style>
 </head>
 <body>
 <section class="hero">
