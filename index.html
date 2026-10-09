@@ -1,62 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FEANE - Parrilla de Fuego | Córdoba</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0a0a;color:#f5f0e8;font-family:serif}
-.hero{position:relative;height:100vh;overflow:hidden}
-.hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
-.hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.8))}
-.hero-content{position:absolute;z-index:2;bottom:10%;left:5%;right:5%}
-.hero h1{font-size:clamp(3rem,10vw,8rem);letter-spacing:-2px;line-height:.9}
-.hero p{margin-top:20px;font-size:1.2rem;opacity:.8;max-width:60px}
-.procesos{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#1a1a1a;padding:1px}
-.proceso{position:relative;height:60vh;background:#000;overflow:hidden}
-.proceso video{width:100%;height:100%;object-fit:cover;opacity:.8;transition:.5s}
-.proceso:hover video{opacity:1;transform:scale(1.05)}
-.proceso-info{position:absolute;bottom:0;left:0;padding:30px;z-index:2}
-.proceso-info span{font-size:.8rem;letter-spacing:3px;opacity:.6}
-.proceso-info h3{font-size:2rem;margin-top:10px}
-.contact{padding:80px 5%;display:flex;justify-content:space-between;border-top:1px solid #222}
-.btn{border:1px solid #f5f0e8;padding:15px 30px;text-decoration:none;color:#f5f0e8;letter-spacing:2px}
-@media(max-width:768px){.procesos{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<section class="hero">
-<video src="videos/hero.mp4" autoplay muted loop playsinline></video>
-<div class="hero-content">
-<h1>FEANE<br>PARRILLA<br>DE FUEGO</h1>
-<p>Carne premium, fuego de quebracho, malbec de altura. Guemes, Cordoba. Solo con reserva.</p>
-<br><br>
-<a class="btn" href="https://wa.me/549351XXXXXXX">RESERVAR MESA<svg viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M19.05 4.94A10.91 10.91 0 0 0 12.04 2C6.04 2 1.08 6.84 1.08 12.78a10.67 10.67 0 0 0 1.43 5.34L1 22l4.06-1.46a10.7 10.7 0 0 0 5.13 1.3h.05c5.96 0 10.92-4.84 10.92-10.78 0-2.88-1.13-5.59-3.11-7.62Zm-7.01 16.48h-.04a9.06 9.06 0 0 1-4.62-1.26l-.33-.2-2.41.87.81-2.35-.21-.37a9.05 9.05 0 0 1-1.39-4.84c0-5.02 4.15-9.11 9.26-9.11a9.18 9.18 0 0 1 6.53 2.7 9.04 9.04 0 0 1 2.7 6.44c0 5.03-4.15 9.12-9.3 9.12Zm5.08-6.83c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.74.91-.9 1.1-.17.19-.34.21-.62.07-.28-.14-1.18-.43-2.25-1.38-.83-.73-1.39-1.64-1.55-1.92-.17-.28-.02-.43.12-.57.12-.12.28-.31.42-.46.14-.15.19-.26.28-.43.09-.17.05-.32-.02-.46-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48h-.55c-.19 0-.5.07-.76.32-.26.25-1 .97-1 2.37 0 1.4 1.02 2.75 1.17 2.94.14.19 2.02 3.08 4.9 4.32.68.29 1.22.47 1.63.6.68.21 1.3.18 1.79.11.55-.08 1.66-.67 1.9-1.32.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33Z"/></svg></a>
-</div>
-</section>
-<section class="procesos">
-<div class="proceso"><video src="videos/01.mp4" autoplay muted loop playsinline></video><div class="proceso-info"><span>01 / CRAFT</span><h3>Salado en seco</h3></div></div>
-<div class="proceso"><video src="videos/02.mp4" autoplay muted loop playsinline></video><div class="proceso-info"><span>02 / FUEGO</span><h3>Quebracho y chispas</h3></div></div>
-<div class="proceso"><video src="videos/03.mp4" autoplay muted loop playsinline></video><div class="proceso-info"><span>03 / RITUAL</span><h3>Mesa larga</h3></div></div>
-<div class="proceso"><video src="videos/04.mp4" autoplay muted loop playsinline></video><div class="proceso-info"><span>04 / ALTURA</span><h3>Malbec decantado</h3></div></div>
-</section>
-<section class="contact">
-<div><h2 style="font-size:3rem">FEANE</h2><p style="opacity:.5;margin-top:10px">Belgrano 801, Guemes<br>Cordoba, Argentina</p></div>
-<div style="text-align:right"><p style="opacity:.5">ABIERTO</p><p>Mar - Dom 20:00 / 00:00</p><br><a class="btn" href="https://wa.me/549351XXXXXXX">WHATSAPP</a></div>
-</section>
-
-<!-- MAPA CORDOBA -->
-<section class="mt-10 p-6">
-  <h3 class="text-xl font-bold mb-3">📍 Donde estamos</h3>
-  <p class="mb-2">Obispo Salguero 741, Nueva Córdoba, Córdoba</p>
-  <iframe class="w-full h-64 rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.9!2d-64.188!3d-31.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI1JzEyLjAiUyA2NMKwMTEnMTYuOCJX!5e0!3m2!1ses!2sar!4v1" loading="lazy"></iframe>
-</section>
-
-<!-- HORARIOS -->
-<section class="mt-6 p-6 bg-zinc-900 rounded-2xl">
-  <h3 class="font-bold">🕒 Horarios</h3>
-  <p>Lun a Sáb: 9:00 a 21:00 - Dom: 10:00 a 14:00</p>
-</section>
-</body>
-</html>
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FEANE - Parrilla de Fuego</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:serif;background:#0a0a0a;color:#fff}.hero{min-height:100vh;display:flex;align-items:center;padding:40px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1546964053-d9334ceb32ee?q=80&w=1200') center/cover}.hero h1{font-size:clamp(40px,8vw,72px);line-height:.9}.hero p{margin:20px 0 30px;max-width:420px;opacity:.9;font-size:18px}.btn{border:1px solid #fff;padding:14px 32px;color:#fff;text-decoration:none;letter-spacing:2px;display:inline-block}section{padding:80px 24px;max-width:1100px;margin:auto}.wa-float{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:9999}.wa-float svg{width:32px;height:32px}</style></head>
+<body><div class="hero"><div><h1>FEANE<br>PARRILLA<br>DE FUEGO</h1><p>Carne premium, fuego de quebracho, malbec de altura. Guemes, Cordoba. Solo con reserva.</p><a class="btn" href="https://wa.me/5493510000000">RESERVAR MESA</a></div></div>
+<section><h2 style="text-align:center;letter-spacing:4px">DONDE ESTAMOS</h2><iframe style="width:100%;height:350px;border:0;margin-top:24px" src="https://maps.google.com/maps?q=Guemes%20Cordoba&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe></section>
+<a class="wa-float" href="https://wa.me/5493510000000" target="_blank"><svg viewBox="0 0 24 24"><path fill="white" d="M19.05 4.94A9.91 9.91 0 0 0 12 0C5.46 0 .12 5.33 .12 11.88c0 2.09 .55 4.13 1.59 5.93L0 24l6.36-1.67a11.88 11.88 0 0 0 5.64 1.44h.01c6.54 0 11.88-5.33 11.88-11.88c0-3.17-1.23-6.16-3.48-8.41ZM12 21.99h-.01a9.96 9.96 0 0 1-5.08-1.39l-.36-.22l-3.77 .99l1.01-3.68l-.24-.38A9.93 9.93 0 0 1 2.02 11.88A9.93 9.93 0 0 1 12 1.94a9.93 9.93 0 0 1 7.03 2.91A9.89 9.89 0 0 1 21.94 11.88A9.93 9.93 0 0 1 12 21.99ZM17.17 14.21c-.29-.15-1.71-.84-1.97-.94c-.27-.1-.46-.15-.65 .15s-.75 .94-.92 1.13s-.34 .22-.63 .07s-1.22-.45-2.32-1.43a8.63 8.63 0 0 1-1.6-1.99c-.17-.29-.02-.45 .12-.59c.13-.13 .29-.34 .43-.51c.14-.17 .19-.29 .29-.48c.1-.19 .05-.36-.02-.51s-.65-1.57-.9-2.15c-.24-.57-.48-.49-.65-.5h-.56c-.19 0-.51 .07-.77 .36s-1.01 .99-1.01 2.41s1.03 2.8 1.18 2.99s2.03 3.1 4.92 4.35c.69 .3 1.23 .48 1.65 .61c.69 .22 1.32 .19 1.82 .11c.55-.08 1.71-.7 1.95-1.37c.24-.68 .24-1.26 .17-1.38c-.07-.12-.26-.19-.55-.34Z"/></svg></a>
+</body></html>
